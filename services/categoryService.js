@@ -8,14 +8,35 @@ class CategoriesService {
   }
 
   generate() {
-    const limit = 5;
-      for (let index = 0; index < limit; index++) {
-        this.categories.push({
-        id: faker.datatype.uuid(),
-        name: faker.commerce.productName(),
-        isBlock: faker.datatype.boolean(),
-      });
-    }
+    // const limit = 5;
+    //   for (let index = 0; index < limit; index++) {
+    //     this.categories.push({
+    //     id: faker.datatype.uuid(),
+    //     name: faker.commerce.productName(),
+    //     isBlock: faker.datatype.boolean(),
+    //   });
+    // }
+    this.categories.push({
+        "idCategory": "1",
+        "name": "Acción"
+      },
+      {
+        "idCategory": "2",
+        "name": "Terror"
+      },
+      {
+        "idCategory": "3",
+        "name": "Deportes"
+      },
+      {
+        "idCategory": "4",
+        "name": "Fantacia"
+      },
+      {
+        "idCategory": "5",
+        "name": "Shotter"
+      })
+    
   }
 
     async create(data) {
